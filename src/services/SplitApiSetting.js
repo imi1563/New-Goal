@@ -5,7 +5,7 @@ const rawBaseQuery = fetchBaseQuery({
   // Force /api in development to fix toggle issue
   baseUrl: import.meta.env.DEV
     ? "/api"
-    : `${import.meta.env.VITE_API_BASE_URL || "https://gb.senew-tech.com"}/api`,
+    : `${import.meta.env.VITE_API_BASE_URL || "https://goal-backend-3ir7.vercel.app"}/api`,
   prepareHeaders: async (headers, { getState }) => {
     try {
       const token =

@@ -9,7 +9,7 @@ export default defineConfig({
    
     proxy: {
       "/api": {
-	      target: "https://gb.senew-tech.com",
+	      target: "https://goal-backend-3ir7.vercel.app",
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path,
