@@ -1,7 +1,7 @@
 // Build absolute URLs only for production; in dev we rely on baseUrl '/api' via Vite proxy
 // export const BASE_URL = "http://192.168.18.31:5000/api";
-export const BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "https://gb.senew-tech.com/api";
+// export const BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://gb.senew-tech.com/api";
+export const BASE_URL = "";
 
 export const BASE_URL_IMAGE = import.meta.env.VITE_FILES_URL || "";
 

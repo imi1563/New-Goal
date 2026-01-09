@@ -3,7 +3,9 @@ import { logout } from "@/store/slices/authSlice";
 
 const rawBaseQuery = fetchBaseQuery({
   // Force /api in development to fix toggle issue
-  baseUrl: import.meta.env.DEV ? "/api" : "http://gb.workbrink.com/api",
+  baseUrl: import.meta.env.DEV
+    ? "/api"
+    : `${import.meta.env.VITE_API_BASE_URL || "https://gb.senew-tech.com"}/api`,
   prepareHeaders: async (headers, { getState }) => {
     try {
       const token =
