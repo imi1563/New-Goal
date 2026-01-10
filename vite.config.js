@@ -5,7 +5,7 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: 5179,
-    allowedHosts: ["g.senew-tech.com" , "https://new-goal-plum.vercel.app/" , "https://new-goal-plum.vercel.app" , "localhost:5179"],  // 👈 add your domain here
+    allowedHosts: ["g.senew-tech.com" , "https://goalshots.com/" , "https://new-goal-plum.vercel.app" , "localhost:5179"],  // 👈 add your domain here
    
     proxy: {
       "/api": {
